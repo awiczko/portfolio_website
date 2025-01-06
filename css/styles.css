@@ -5,20 +5,6 @@
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /* 
-      Change favorite color
-      Default: hsl(162, 100%, 40%)
-      Orange: hsl(14, 100%, 65%) - Blue: hsl(210, 100%, 70%)
-      Pink: hsl(356, 100%, 75%) - Purple: hsl(250, 100%, 75%)
-
-      For more colors visit: https://colors.dopely.top/color-pedia
-      -> Choose any color 
-      -> click on tab (Color Conversion)
-      -> Copy the color mode (HSL)
-  */
-
   --hue: 30;
   --first-color: hsl(var(--hue), 50%, 70%);
   --first-color-alt: hsl(var(--hue), 50%, 60%);
@@ -28,7 +14,6 @@
   --container-color: hsl(228, 15%, 15%);
   
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2rem;
   --bigger-font-size: 1.25rem;
@@ -326,13 +311,6 @@ svg {
     fill: var(--first-color);
     filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2))
 }
-/* 
-.home__image{
-    width: 900px;
-    transform: translateX(-120px);
-} */
-
-
 
 /*=============== BUTTON ===============*/
 .button{
@@ -555,8 +533,8 @@ svg {
 }
 
 .experience_description {
-    text-align: left; /* Wyrównanie tekstu do lewej */
-    padding-left: 0;  /* Opcjonalnie usuwa domyślne wcięcie listy */
+    text-align: left; 
+    padding-left: 0;  
 }
 
 
@@ -584,34 +562,6 @@ svg {
 .footer__education{
     font-size: var(--normal-font-size);
 }
-
-/* style do linkow */
-
-/* .footer__social{
-    display: flex;
-    justify-content: center;
-    column-gap: 1.25rem;
-}
-
-.footer__social-link{
-    display: flex;
-    background-color: var(--first-color-alt);
-    padding: .5rem;
-    color: var(--title-color);
-    font-size: 1.5rem;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%);
-    transition: transform .4s;
-}
-
-.footer__social-link:hover{
-    transform: translateY(-.25rem);
-}
-
-.footer__copy{
-    font-size: var(--small-font-size);
-    margin-top: 2rem;
-} */
-
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
@@ -654,8 +604,6 @@ svg {
     bottom: 3rem;
 }
 
-
-/* USTAWIANIE ROZSTAWU ELEMENTOW STRONY!!! */
 
 
 /*=============== BREAKPOINTS ===============*/
@@ -881,7 +829,6 @@ svg {
 
     .footer__container{
         grid-template-columns: repeat(3, 1fr);
-        /*  *align-itmes: center*/
         text-align: initial;
     }
 

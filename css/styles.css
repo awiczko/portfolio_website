@@ -660,26 +660,46 @@ svg {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
-    .container{
+@media screen and (max-width: 575px) {
+    .container {
         margin-inline: 1rem;
     }
 
-    .skills__content{
-        grid-template-columns: max-content;
-        row-gap: 1rem;
+    .skills__content {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        row-gap: 1rem; 
     }
 
-    .services__card{
+    .skills__group {
+        display: grid;
+        grid-template-columns: 1fr; 
+        row-gap: 1.5rem; 
+        justify-items: center; 
+        align-items: center; 
+    }
+
+    .skills__item {
+        font-size: 1rem;
+        text-align: center; 
+    }
+
+    .skills__group ol {
+        list-style-position: inside; 
+        padding-left: 0; 
+    }
+
+    .services__card {
         padding-block: 1.5rem;
     }
 }
+
 
 /* For medium devices */
 @media screen and (min-width: 576px){
     .home__container,
     .about__container,
-    .skills__cointener,
+    .skills__container,
     .services__container,
     .projects__container
     {

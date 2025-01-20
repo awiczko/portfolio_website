@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: 2.5rem;
 
   --hue: 30;
   --first-color: hsl(var(--hue), 50%, 70%);
@@ -152,7 +152,7 @@ svg {
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
-    align-items: right;
+    align-items: center;
 }
 
 .nav__logo{
@@ -220,23 +220,6 @@ svg {
     right: 0;
 }
 
-/* Add blur to header */
-.blur-header{
-    background-color: transparent;
-}
-
-.blur-header::after{
-    content: '';
-    position: absolute;
-    width: 1000%;
-    height: 100%;
-    background-color: hsla(0, 0%, 10%, .3);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px); /*safari*/
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
 
 /* Active link */
 .active-link{
@@ -702,11 +685,11 @@ svg {
     }
 
     .section__subtitle{
-        font-size: var(--normal-font-size);
+        font-size: var(--normal-font-size);        
     }
 
     .nav{
-        height: calc(var(--header-height) + 1.5rem);
+        height: calc(var(--header-height) + 1rem);
     }
 
     .nav__close,
@@ -814,7 +797,7 @@ svg {
     }
 
     .projects__container{
-        grid-template-columns: repeat(2,350px);
+        grid-template-columns: repeat(1,350px);
         row-gap: 3rem;
         padding-block: 2.5rem 4rem;
     }
